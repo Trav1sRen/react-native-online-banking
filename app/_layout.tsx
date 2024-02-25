@@ -1,10 +1,12 @@
 import { useFonts } from 'expo-font';
-import { Stack, SplashScreen } from 'expo-router';
+import { SplashScreen, Stack } from 'expo-router';
 import React, { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { TamaguiProvider } from 'tamagui';
 
 import config from '../tamagui.config';
+
+import useAppStateChange from '~/hooks/useAppStateChange';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -18,6 +20,8 @@ export default function RootLayout() {
     Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
     InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
   });
+
+  useAppStateChange();
 
   useEffect(() => {
     if (loaded) {
