@@ -1,9 +1,9 @@
 import { createAnimations } from '@tamagui/animations-react-native';
-import { createInterFont } from '@tamagui/font-inter';
+import { config as v3Config } from '@tamagui/config/v3';
 import { createMedia } from '@tamagui/react-native-media-driver';
 import { shorthands } from '@tamagui/shorthands';
 import { themes, tokens } from '@tamagui/themes';
-import { createTamagui, styled, SizableText, H1, YStack } from 'tamagui';
+import { H1, SizableText, YStack, createFont, createTamagui, styled } from 'tamagui';
 
 const animations = createAnimations({
   bouncy: {
@@ -25,9 +25,31 @@ const animations = createAnimations({
   },
 });
 
-const headingFont = createInterFont();
+const nunitoFace = {
+  normal: { normal: 'Nunito-Medium' },
+  bold: { normal: 'Nunito-Bold' },
+};
 
-const bodyFont = createInterFont();
+const poppinsFace = {
+  normal: { normal: 'Poppins-Medium' },
+  bold: { normal: 'Poppins-Bold' },
+};
+
+const headingFont = createFont({
+  size: v3Config.fonts.heading.size,
+  lineHeight: v3Config.fonts.heading.lineHeight,
+  weight: v3Config.fonts.heading.weight,
+  letterSpacing: v3Config.fonts.heading.letterSpacing,
+  face: poppinsFace,
+});
+
+const bodyFont = createFont({
+  size: v3Config.fonts.body.size,
+  lineHeight: v3Config.fonts.body.lineHeight,
+  weight: v3Config.fonts.body.weight,
+  letterSpacing: v3Config.fonts.body.letterSpacing,
+  face: nunitoFace,
+});
 
 export const Container = styled(YStack, {
   flex: 1,

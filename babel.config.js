@@ -9,12 +9,10 @@ module.exports = function (api) {
       config: './tamagui.config.ts',
     },
   ]);
-
   plugins.push('react-native-reanimated/plugin');
 
   return {
     presets: ['babel-preset-expo'],
-
     plugins,
   };
 };

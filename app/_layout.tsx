@@ -17,10 +17,14 @@ export const unstable_settings = {
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
-    InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
+    Nunito: require('../assets/fonts/Nunito-Medium.ttf'),
+    NunitoBold: require('../assets/fonts/Nunito-Bold.ttf'),
+
+    Poppins: require('../assets/fonts/Poppins-Medium.ttf'),
+    PoppinsBold: require('../assets/fonts/Poppins-Bold.ttf'),
   });
 
+  // https://tanstack.com/query/v4/docs/framework/react/react-native#refetch-on-app-focus
   useAppStateChange();
 
   useEffect(() => {
