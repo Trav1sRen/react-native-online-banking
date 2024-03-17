@@ -36,6 +36,7 @@ const poppinsFace = {
 };
 
 const headingFont = createFont({
+  family: 'Poppins',
   size: v3Config.fonts.heading.size,
   lineHeight: v3Config.fonts.heading.lineHeight,
   weight: v3Config.fonts.heading.weight,
@@ -44,6 +45,7 @@ const headingFont = createFont({
 });
 
 const bodyFont = createFont({
+  family: 'Nunito',
   size: v3Config.fonts.body.size,
   lineHeight: v3Config.fonts.body.lineHeight,
   weight: v3Config.fonts.body.weight,
