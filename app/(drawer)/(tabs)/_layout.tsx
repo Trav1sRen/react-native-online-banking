@@ -15,6 +15,7 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: 'black',
+        tabBarLabelStyle: { fontFamily: 'Poppins' },
       }}>
       <Tabs.Screen
         name="index"

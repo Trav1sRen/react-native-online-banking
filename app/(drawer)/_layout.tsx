@@ -4,7 +4,11 @@ import { Drawer } from 'expo-router/drawer';
 import { Pressable, StyleSheet } from 'react-native';
 
 const DrawerLayout = () => (
-  <Drawer>
+  <Drawer
+    screenOptions={{
+      drawerLabelStyle: { fontFamily: 'Poppins' },
+      headerTitleStyle: { fontFamily: 'Poppins' },
+    }}>
     <Drawer.Screen
       name="index"
       options={{

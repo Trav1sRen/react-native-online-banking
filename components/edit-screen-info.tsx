@@ -3,8 +3,8 @@ import { H4, Paragraph, YStack } from 'tamagui';
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
     <YStack>
-      <YStack alignItems="center" marginHorizontal="$6">
-        <H4>Code path of this screen:</H4>
+      <YStack alignItems="center" marginHorizontal="$6" gap="$1">
+        <H4>Open up the code of this screen:</H4>
         <YStack borderRadius="$3" marginVertical="$1">
           <Paragraph>{path}</Paragraph>
         </YStack>

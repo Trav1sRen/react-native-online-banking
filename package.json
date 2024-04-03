@@ -30,7 +30,9 @@
     "expo-status-bar": "~1.11.1",
     "expo-system-ui": "~2.9.3",
     "immer": "^10.0.3",
+    "jotai": "^2.7.1",
     "react": "18.2.0",
+    "react-hook-form": "^7.51.1",
     "react-native": "0.73.4",
     "react-native-gesture-handler": "~2.14.0",
     "react-native-mmkv": "^2.12.1",
@@ -39,8 +41,7 @@
     "react-native-screens": "~3.29.0",
     "react-native-svg": "^14.1.0",
     "react-native-url-polyfill": "^2.0.0",
-    "tamagui": "1.90.15",
-    "zustand": "^4.5.1"
+    "tamagui": "1.90.15"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
