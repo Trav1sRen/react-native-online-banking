@@ -1,4 +1,4 @@
-import { createAnimations } from '@tamagui/animations-react-native';
+import { createAnimations } from '@tamagui/animations-moti';
 import { config as v3Config } from '@tamagui/config/v3';
 import { createMedia } from '@tamagui/react-native-media-driver';
 import { shorthands } from '@tamagui/shorthands';
@@ -36,20 +36,14 @@ const poppinsFace = {
 };
 
 const headingFont = createFont({
+  ...v3Config.fonts.heading,
   family: 'Poppins',
-  size: v3Config.fonts.heading.size,
-  lineHeight: v3Config.fonts.heading.lineHeight,
-  weight: v3Config.fonts.heading.weight,
-  letterSpacing: v3Config.fonts.heading.letterSpacing,
   face: poppinsFace,
 });
 
 const bodyFont = createFont({
+  ...v3Config.fonts.body,
   family: 'Nunito',
-  size: v3Config.fonts.body.size,
-  lineHeight: v3Config.fonts.body.lineHeight,
-  weight: v3Config.fonts.body.weight,
-  letterSpacing: v3Config.fonts.body.letterSpacing,
   face: nunitoFace,
 });
 
